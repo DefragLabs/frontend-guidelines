@@ -1,3 +1,12 @@
-# frontend-guidelines
+# FRONTEND-GUIDELINES
 
-## Always use browsers local time when sending datetime to backend.
+### HTML
+
+### SCSS
+
+### JAVASCRIPT
+
+### REACT JS
+
+### MISCELLANEOUS
+##### - Always use browsers local time when sending datetime to backend.
