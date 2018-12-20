@@ -11,6 +11,57 @@
 ### JAVASCRIPT
 
 ### REACT JS
+
+Project directory structure
+
+```
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── actions
+    │   ├── app-actions.js
+    |   └── auth-actions.js
+    |
+    ├── assets
+    |   ├── fonts
+    |   └── images
+    |
+    ├── components
+    |   └── auth-module
+    |
+    ├── contants
+    |   └── action-type.js
+    |
+    ├── helpers
+    |   └── auth-helpers.js
+    |
+    ├── i18n
+    |   └── config.js
+    |
+    ├── reducer
+    |   └── root.js
+    |
+    ├── routes
+    |   └── routes.js
+    |
+    ├── store
+    |   └── store.js
+    |
+    ├── styles
+    |   └── app.scss
+    |
+    └── utils
+        ├── app-api-utils.js
+        └── string-utils.js
+```
+
   - define common components in a different folder and use them instead of repeating code
   - use camel casing to define variables, constants and functions
   - define the text/string content into translation.json if its being used
@@ -20,5 +71,6 @@
   - maintain indentations for easy readability
   - define view inside a react render metod if the render method is big
   - get the props, states that are needed in rendering into constants and use them inside the return instead of (this.props.xyz.abc.prq)
+
 
 action type grammer - VERB_{action}_SUCCESS / VERB_{action}_FAILED
