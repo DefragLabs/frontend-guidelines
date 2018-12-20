@@ -38,6 +38,6 @@ $white: #FFFFFF;
 $green: #2adb13;
 ```
 
-### if images can be converted to fonts, prefer that. 
+### If images can be converted to fonts, prefer that. 
 
 [icomooon](https://icomoon.io/) for converting images to fonts
