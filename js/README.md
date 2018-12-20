@@ -24,3 +24,39 @@ Then one might ask, why use service workers in the first place ?
 
 Service worker registration caches the files, this lets the app load instantly for repeated visitors.
 https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Do not use index for figuring out the order
+
+Let's take an example
+
+```
+var colors = ["red", "yellow", "blue"]
+```
+We might use the index of the colors to identify the order. In the above example the order is `red -> yellow -> blue`
+Now let's say these come from an api. There is no guarantee that the order is maintained. It might come in a different order.
+
+We can solve it in the following way
+
+```
+var colors = [
+    {
+        "name": "red",
+        "index": 0
+    }, {
+        "name": "yellow",
+        "index": 1
+    }, {
+        "name": "blue",
+        "index": 2
+    }
+]
+```
+
+By using the above code, we don't infer the ordering from the index of values in an array. It doesn't matter what the order
+of values in an array, we always check for the index of the color in the object.
+
+### Use browser's local timezone while using datetime
+
+Backend usually stores datetime in `UTC` to avoid the confusion. But when they are displayed, they have to be converted to the
+timezone of the browser. Similarly, when generating any datetime values, generate them in the local timezone.
+
