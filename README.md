@@ -22,17 +22,3 @@
   - get the props, states that are needed in rendering into constants and use them inside the return instead of (this.props.xyz.abc.prq)
 
 action type grammer - VERB_{action}_SUCCESS / VERB_{action}_FAILED
-
-### MISCELLANEOUS
-##### - Always use browsers local time when sending datetime to backend.
-
-##### - Don't use index for figuring out the order.
-  - use semantic-ui or similar to define stuff like segments, tabs, n etc to reduce time spent building them from stratch
-  - use loaders on thr ui if making api alls and waiting till the response
-
-### References
-[Custom envronment varibales React](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables)  
-[React-router intercepting server calls](https://github.com/ReactTraining/react-router/issues/5520)
-
-
-
