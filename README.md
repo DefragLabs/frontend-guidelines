@@ -11,7 +11,8 @@ my-app
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
-│   └── manifest.json
+│   ├── manifest.json
+|   └── local/en/translations.json
 └── src
     ├── actions
     │   ├── app-actions.js
