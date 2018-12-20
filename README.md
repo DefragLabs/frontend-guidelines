@@ -6,7 +6,7 @@
   - Use varibales defined for adding css such as padding, margin, font-size etc
   - for text/font use the defined mixins
   - define colors in a signle css file before using it in
-  - if images can be converted to fonts beofre using then use it(icomooon)
+  - if images can be converted to fonts before using then use it([icomooon](https://icomoon.io/))
 
 ### JAVASCRIPT
 
