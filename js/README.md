@@ -27,9 +27,9 @@ function getUserDetails() {
 
 ### Define the text/string content into translation.json if its being used
 
-Filepath: `public/local/en/translations.json`
+**Filepath:** `public/local/en/translations.json`
 
-Dependencies:
+**Dependencies:**
 ```
 "i18next": "^11.3.3",
 "i18next-browser-languagedetector": "^2.2.0",
@@ -37,6 +37,7 @@ Dependencies:
 "react-i18next": "^7.7.0",
 ```
 
+**Example:**
 ```
 // translations.json
 {
@@ -63,8 +64,9 @@ If the constants need to be accessed in multiple files, it is good to move those
 
 ### Import images into a constants file before using them in any components
 
-FilePath: `src/constants/images.js`
+**FilePath:** `src/constants/images.js`
 
+**Example:**
 ```
 // images.js
 import brandLogoHeader from  '../assets/images/brand-logo-header.png';
@@ -79,6 +81,7 @@ Use `BRAND_LOGO_HEADER, BRAND_LOGO_FOOTER` in components.
 
 ### Define common helper functions/string utils under the utils folder.
 
+**Example:**
 ```
 // string-utils.js
 export function removeSlash(string) {
@@ -92,7 +95,7 @@ These are common utilities, which will be used throughout the code.
 
 We use 2 spaces for indentation. Also use code blocks properly.
 
-Example:
+**Example:**
 ```
 function getUserDetails(users, userID) {
   for(var i=0; i < users.length, i++) {
@@ -110,6 +113,7 @@ We can see that code inside `for` & `if` is further indented.
 
 Split the code into disparate functions and reference them in the render method.
 
+**Example:**
 ```
 render() {
   return (
@@ -136,6 +140,7 @@ cont orgs = this.props.orgs;
 `VERB_{action}_SUCCESS / VERB_{action}_FAILED`
 
 ```
+ATTEMPT_LOGIN
 RECEIVE_LOGIN_SUCCESS
 RECEIVE_LOGIN_FAILED
 ```
