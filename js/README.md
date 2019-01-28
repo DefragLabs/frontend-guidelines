@@ -144,3 +144,7 @@ ATTEMPT_LOGIN
 RECEIVE_LOGIN_SUCCESS
 RECEIVE_LOGIN_FAILED
 ```
+### Don't call child's methods in parent's component
+
+1. This pattern breaks the encapsulation of both the parent and child. The child cannot be refactored without carefully checking if its public methods are used elsewhere. The parent cannot be tested in isolation without injecting its dependencies (i.e. the child)
+2. In general, data should be passed down the tree via props. There are a few exceptions to this (such as calling .focus() or triggering a one-time animation that doesn’t really “change” the state) but any time you’re exposing a method called “set”, props are usually a better choice. 
