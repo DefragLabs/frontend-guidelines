@@ -148,3 +148,15 @@ RECEIVE_LOGIN_FAILED
 
 1. This pattern breaks the encapsulation of both the parent and child. The child cannot be refactored without carefully checking if its public methods are used elsewhere. The parent cannot be tested in isolation without injecting its dependencies (i.e. the child)
 2. In general, data should be passed down the tree via props. There are a few exceptions to this (such as calling .focus() or triggering a one-time animation that doesn’t really “change” the state) but any time you’re exposing a method called “set”, props are usually a better choice. 
+
+### Cache busting 
+
+All of our apps are bootstarped with [CRA](https://facebook.github.io/create-react-app) and CRA adds hash to JS and CSS files during build process. Incase browser is caching `index.html` itself and because of that users are not able to see latest changes after deployment then below are the solutions to solve cacheing problem for the appications which are bootstraped using [CRA](https://facebook.github.io/create-react-app).
+
+1. By unregistering web workers
+
+* `import { unregister } from './registerServiceWorker';`
+
+* Call `unregister()` in `index.js` filed instead of `registerServiceWorker()`.
+
+2. Adding "Cache-Control": "no-store, no-cache" line to server side response header.
