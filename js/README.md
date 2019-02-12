@@ -159,4 +159,4 @@ All of our apps are bootstarped with [CRA](https://facebook.github.io/create-rea
 
 * Call `unregister()` in `index.js` filed instead of `registerServiceWorker()`.
 
-2. Adding "Cache-Control": "no-store, no-cache" line to server side response header.
+2. Adding "Cache-Control": "no-store, no-cache" line to server side response header only for index.html location.
